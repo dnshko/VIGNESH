@@ -1,3 +1,34 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@VK1235 
+dnshko
+/
+exnora
+1
+61
+Code
+Issues
+Pull requests
+1
+Actions
+Projects
+Wiki
+Security
+Insights
+exnora/public/Team/Dinesh/css/style.css
+@dnshko
+dnshko added about page
+Latest commit ec1b006 16 hours ago
+ History
+ 1 contributor
+3417 lines (2922 sloc)  60.3 KB
+  
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 @font-face {
     font-family: 'Oduda';
@@ -16,8 +47,8 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Open Sans", sans-serif; /* edited by vk */
-    font-size: 16px; /* edited by vk */
+    font-family: "Poppins";
+    font-size: 17px;
     color: #212529;
 }
 
@@ -112,8 +143,8 @@ a {
 }
 
 a:hover {
-    text-decoration: none; /* edited by vk */
-    color: #000; /* edited by vk */
+    text-decoration: underline;
+    color: #000;
 }
 
 /* SPACINGS */
@@ -661,7 +692,7 @@ a:hover {
     position: absolute;
     left: 50%;
     /* top: 50px; */
-    padding: 30px 0;
+    /* padding: 30px 0; */
     transform: translateX(-50%);
     border-radius: 4px;
     z-index: 3;
@@ -1450,7 +1481,6 @@ a:hover {
 /* .col-md-6:nth-child(2n+1) .image-caption-box {
     padding-right: 30px;
 }
-
 .col-md-6:nth-child(2n+2) .image-caption-box {
     padding-left: 30px;
 } */
@@ -2515,7 +2545,6 @@ a:hover {
     width: calc(100% - 120px);
     display: inline-block;
 }
-
 .testimonial .infos h6 {
     display: block;
     font-size: 30px;
@@ -2870,12 +2899,12 @@ a:hover {
 .contact-box {
     width: 100%;
     display: flex;
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 26px;
     border: 1px solid #cecece;
     border-radius: 6px;
-    padding: 5px;
+    padding: 25px;
     background: #fff;
 }
 
@@ -3233,6 +3262,140 @@ only screen and (max-device-width: 767px) {
     box-shadow: 0px 1px 10px #00000029;
     border-radius: 30px;
     /* min-height: 450px; */
+    
+}
+/* .image-caption-box:hover {
+    background: linear-gradient(130deg, #009a4e 0%, lightgreen 100%);
+    box-shadow: none;
+  } */
+
+.custom-p {
+    border-radius: 15px;
+    background: #fbc50b;
+    color: #000;
+    font-family: "Oduda";
+    padding: 10px;
+    min-height: 320px;
+    text-align: center;
+}
+.custom-silde-p{
+    border-radius: 0 0 30px 30px;
+    background: #fbc50b;
+    color: #000;
+    font-family: "Oduda";
+    /* padding: 10px;   */
+    /* min-height: 320px; */
+    text-align: center;
+    cursor: pointer;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #fbc50b #009a4e;
+  }
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  *::-webkit-scrollbar-track {
+    background: #009a4e;
+   
+    background-size: cover;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: #fbc50b;
+    border-radius: 20px;
+    border: 3px solid #009a4e;
+  }
+  
+  /* dd */
+  .side-half-picture {
+    width: auto;
+    height: calc(100% - 30px);
+    background-size: cover !important;
+    background-position: center !important;
+    margin: 15px 0;
+    border-radius: 30px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 10px #00000029;
+}
+
+.side-image {
+    width: 100%;
+    display: block;
+    margin: 0;
+    position: relative;
+}
+
+.side-image .video-button {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    line-height: 100px;
+    text-align: center;
+    font-size: 28px;
+    color: #009a4e;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    text-indent: 4px;
+}
+
+.side-image img {
+    width: 100%;
+    display: block;
+    border-radius: 6px;
+}
+
+.side-image .big-note-box {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    background: #009a4e;
+    color: #fff;
+    position: absolute;
+    right: 30px;
+    bottom: -30px;
+    z-index: 1;
+    padding: 40px;
+    border-radius: 2px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.side-image .big-note-box:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 15px 20px 0;
+    border-color: transparent transparent #009a4e transparent;
+    position: absolute;
+    top: -20px;
+    left: 30px;
+}
+
+.side-image .big-note-box h4 {
+    width: 100%;
+    display: block;
+    font-size: 26px;
+    font-family: "Oduda";
+    margin-bottom: 20px;
+}
+
+.side-image .big-note-box p {
+    display: block;
+    margin: 0;
+    color: #fff;
+}
+
+
+/*new*/
+.image-caption-box{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 10px #00000029;
+    border-radius: 30px;
+    /* min-height: 450px; */
     cursor: pointer;
 }
 /* .image-caption-box:hover {
@@ -3267,12 +3430,37 @@ only screen and (max-device-width: 767px) {
     border-radius: 20px;
     border: 3px solid #009a4e;
   }
-  
- 
-   
+  .col-lg-8 p
+  {
+      color: #fff;
+  }
+  .joinas {
+    box-shadow: 0px 1px 10px #00000029;
+    border: 1px solid #cecece;
+    padding: 15px;
+  }
 
-  /* own */
-  
+  .joinas:hover {
+    background: #fbc50b;
+    border-color: transparent;
+  }
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+
+/* own */
+
+/* social media */
+
 table { margin: 0 auto; }
 th {
 	 line-height: 50px;
@@ -3306,7 +3494,7 @@ th {
 .slider.gplus { background: #1b1b1a; }
 .slider.pin { background: #cb2027; }
 .slider.insta { background: orangered;}
-.slider.web { background: rgb(189, 154, 1);}
+.slider.web { background: rgb(150, 123, 3);}
 
 .slide-1 {
     position: absolute;
@@ -3340,6 +3528,22 @@ th {
 .slider.slider-up:hover .slide-2 { top: 0; opacity: 1; }
 .slider.slider-down:hover .slide-2 { top: 0; opacity: 1; }
  
-.joinas { 
+.j1 { 
     padding: 20px 0px 0px 50px;
+}
+
+.link:hover {
+    text-decoration: none;
+}
+
+/* CONTACT1 BOX */  
+.contact1-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 26px;
+    border: 1px solid #cecece;
+    border-radius: 6px;
+    padding: 5px;
+    background: #fff;
 }
